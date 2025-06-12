@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="webfonts/bootstrap-icons.woff" />
+    <link rel="stylesheet" href="webfonts/bootstrap-icons.woff2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+  </head>
+  <body>
+    <header class="container fixed-top">
+      <nav class="navbar navbar-expand-lg border-bottom">
+        <a class="navbar-brand">
+          <i class="bi bi-funnel-fill text-light"></i>
+          quote generator
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="bookmarks.html" class="nav-link">
+                <i class="bi bi-bookmarks-fill text-light"></i>
+                bookmarks
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="container vh-100 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div
+        class="card w-100 border-0 rounded-5 shadow-lg d-flex justify-content-center align-items-center bg-transparent"
+        id="card"
+      ></div>
+      <button class="btn btn-light mt-4 text-capitalize" id="generateBtn">
+        <i class="bi bi-shuffle"></i>
+        generate new quote
+      </button>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

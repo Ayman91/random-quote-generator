@@ -1,0 +1,89 @@
+/** Loading Fonts and Icons */
+@font-face {
+  font-family: 'bootstrap-icons';
+  src: url('/webfonts/bootstrap-icons.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/webfonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/webfonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/webfonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/** Start Styles */
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    var(--gradient-angle),
+    rgba(50, 164, 209, 1) 0%,
+    rgba(87, 199, 133, 1) 100%
+  );
+  animation: rotateGradient 6s linear infinite;
+}
+
+@keyframes rotateGradient {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+.navbar-brand {
+  margin-right: unset;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+#quote {
+  font-family: 'Playfair Display', serif;
+  /* background: -webkit-linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
+
+#generateBtn {
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+  background-image: linear-gradient(to right, #00c9ff 0%, #92fe9d 100%);
+}
+
+#generateBtn:hover {
+  background-position: right center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: unset;
+}
