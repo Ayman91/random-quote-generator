@@ -1,12 +1,12 @@
 /** Loading Fonts and Icons */
 @font-face {
   font-family: 'bootstrap-icons';
-  src: url('/webfonts/bootstrap-icons.woff2') format('woff2');
+  src: url('../webfonts/bootstrap-icons.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/webfonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf')
+  src: url('../webfonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf')
     format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/webfonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf')
+  src: url('../webfonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf')
     format('truetype');
   font-weight: 400;
   font-style: italic;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/webfonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf')
+  src: url('../webfonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf')
     format('truetype');
   font-weight: 700;
   font-style: normal;
